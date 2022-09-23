@@ -1,6 +1,6 @@
-package com.jojoidu.book.freelecspringboot2webservice.domain.posts;
+package com.jojoidu.book.freelecspringboot2webservice.web.domain.posts;
 
-import com.jojoidu.book.freelecspringboot2webservice.domain.BaseTimeEntity;
+import com.jojoidu.book.freelecspringboot2webservice.web.domain.BaseTimeEntity;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;

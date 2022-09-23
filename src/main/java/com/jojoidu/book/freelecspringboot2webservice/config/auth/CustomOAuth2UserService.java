@@ -2,8 +2,8 @@ package com.jojoidu.book.freelecspringboot2webservice.config.auth;
 
 import com.jojoidu.book.freelecspringboot2webservice.config.auth.dto.OAuthAttributes;
 import com.jojoidu.book.freelecspringboot2webservice.config.auth.dto.SessionUser;
-import com.jojoidu.book.freelecspringboot2webservice.domain.user.User;
-import com.jojoidu.book.freelecspringboot2webservice.domain.user.UserRepository;
+import com.jojoidu.book.freelecspringboot2webservice.web.domain.user.User;
+import com.jojoidu.book.freelecspringboot2webservice.web.domain.user.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.oauth2.client.userinfo.DefaultOAuth2UserService;

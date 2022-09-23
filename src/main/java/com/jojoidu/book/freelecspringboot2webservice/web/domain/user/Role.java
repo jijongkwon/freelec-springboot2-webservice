@@ -1,4 +1,4 @@
-package com.jojoidu.book.freelecspringboot2webservice.domain.user;
+package com.jojoidu.book.freelecspringboot2webservice.web.domain.user;
 
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;

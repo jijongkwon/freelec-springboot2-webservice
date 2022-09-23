@@ -1,6 +1,6 @@
 package com.jojoidu.book.freelecspringboot2webservice.config.auth;
 
-import com.jojoidu.book.freelecspringboot2webservice.domain.user.Role;
+import com.jojoidu.book.freelecspringboot2webservice.web.domain.user.Role;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;

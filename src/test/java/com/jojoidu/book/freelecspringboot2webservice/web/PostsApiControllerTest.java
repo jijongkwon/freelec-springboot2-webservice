@@ -1,8 +1,8 @@
 package com.jojoidu.book.freelecspringboot2webservice.web;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.jojoidu.book.freelecspringboot2webservice.domain.posts.Posts;
-import com.jojoidu.book.freelecspringboot2webservice.domain.posts.PostsRepository;
+import com.jojoidu.book.freelecspringboot2webservice.web.domain.posts.Posts;
+import com.jojoidu.book.freelecspringboot2webservice.web.domain.posts.PostsRepository;
 import com.jojoidu.book.freelecspringboot2webservice.web.dto.PostsSaveRequestDto;
 import com.jojoidu.book.freelecspringboot2webservice.web.dto.PostsUpdateRequestDto;
 import org.junit.After;

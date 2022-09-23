@@ -1,6 +1,6 @@
 package com.jojoidu.book.freelecspringboot2webservice.web.dto;
 
-import com.jojoidu.book.freelecspringboot2webservice.domain.posts.Posts;
+import com.jojoidu.book.freelecspringboot2webservice.web.domain.posts.Posts;
 import lombok.Getter;
 
 @Getter

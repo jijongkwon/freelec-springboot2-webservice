@@ -1,4 +1,4 @@
-package com.jojoidu.book.freelecspringboot2webservice.domain;
+package com.jojoidu.book.freelecspringboot2webservice.web.domain;
 
 import lombok.Getter;
 import net.bytebuddy.asm.Advice;

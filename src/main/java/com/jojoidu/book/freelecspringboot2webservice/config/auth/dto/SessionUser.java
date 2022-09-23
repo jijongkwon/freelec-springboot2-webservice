@@ -1,7 +1,7 @@
 package com.jojoidu.book.freelecspringboot2webservice.config.auth.dto;
 
 
-import com.jojoidu.book.freelecspringboot2webservice.domain.user.User;
+import com.jojoidu.book.freelecspringboot2webservice.web.domain.user.User;
 import lombok.Getter;
 
 import java.io.Serializable;

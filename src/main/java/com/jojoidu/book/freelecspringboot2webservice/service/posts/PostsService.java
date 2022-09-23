@@ -1,7 +1,7 @@
 package com.jojoidu.book.freelecspringboot2webservice.service.posts;
 
-import com.jojoidu.book.freelecspringboot2webservice.domain.posts.Posts;
-import com.jojoidu.book.freelecspringboot2webservice.domain.posts.PostsRepository;
+import com.jojoidu.book.freelecspringboot2webservice.web.domain.posts.Posts;
+import com.jojoidu.book.freelecspringboot2webservice.web.domain.posts.PostsRepository;
 import com.jojoidu.book.freelecspringboot2webservice.web.dto.PostsListResponseDto;
 import com.jojoidu.book.freelecspringboot2webservice.web.dto.PostsResponseDto;
 import com.jojoidu.book.freelecspringboot2webservice.web.dto.PostsSaveRequestDto;

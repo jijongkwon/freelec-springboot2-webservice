@@ -1,5 +1,7 @@
 package com.jojoidu.book.freelecspringboot2webservice.domain.posts;
 
+import com.jojoidu.book.freelecspringboot2webservice.web.domain.posts.Posts;
+import com.jojoidu.book.freelecspringboot2webservice.web.domain.posts.PostsRepository;
 import org.junit.After;
 import org.junit.Test;
 import org.junit.runner.RunWith;

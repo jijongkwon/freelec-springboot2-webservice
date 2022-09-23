@@ -1,4 +1,4 @@
-package com.jojoidu.book.freelecspringboot2webservice.domain.posts;
+package com.jojoidu.book.freelecspringboot2webservice.web.domain.posts;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
