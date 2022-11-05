@@ -25,7 +25,7 @@ public class User extends BaseTimeEntity {
     @Column
     private String picture;
 
-    @Enumerated(EnumType.STRING)
+    @Enumerated(EnumType.STRING)// jpa로 데이터베이스로 저장할 때 enum값을 어떤형태로 저장할지 결정
     @Column(nullable = false)
     private Role role;
 

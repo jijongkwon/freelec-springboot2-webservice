@@ -7,6 +7,7 @@ import lombok.RequiredArgsConstructor;
 @RequiredArgsConstructor
 public enum Role {
 
+    //spring security에서 ROLE_ 이 항상 앞에 있어야함
     GUEST("ROLE_GUEST", "손님"),
     USER("ROLE_USER", "일반 사용자");
 

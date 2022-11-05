@@ -21,7 +21,8 @@ import java.util.Collections;
 @Service
 public class CustomOAuth2UserService implements OAuth2UserService<OAuth2UserRequest, OAuth2User> {
     private final UserRepository userRepository;
-    private final HttpSession httpSession;
+    //session 사용자로부터 오는 일련의 요청을 하나의 상태로 보고 그 상태를 일정하게 유지하는 기술이다.
+    private final HttpSession httpSession; // session 쿠키 생성
 
     @Override
     public OAuth2User loadUser(OAuth2UserRequest userRequest) throws OAuth2AuthenticationException{
@@ -30,17 +31,18 @@ public class CustomOAuth2UserService implements OAuth2UserService<OAuth2UserRequ
         OAuth2User oAuth2User = delegate.loadUser(userRequest);
 
         String registrationId = userRequest
-                .getClientRegistration().getRegistrationId();
+                .getClientRegistration().getRegistrationId();// 로그인 서비스를 구분하는 코드
         String userNameAttributeName = userRequest
                 .getClientRegistration().getProviderDetails()
-                .getUserInfoEndpoint().getUserNameAttributeName();
+                .getUserInfoEndpoint().getUserNameAttributeName();// 로그인 진행시 키가 되는 필드 값
 
         OAuthAttributes attributes = OAuthAttributes
                 .of(registrationId, userNameAttributeName,oAuth2User.getAttributes());
 
         User user = saveOrUpdate(attributes);
 
-        httpSession.setAttribute("user", new SessionUser(user));
+        httpSession.setAttribute("user", new SessionUser(user)); // 세션에 사용자 정보를 저장하기 위한 dto 클래스
+        // 직렬화 기능을 가진 세션을 구현해야 오류가 발생하지 않음
 
         return new DefaultOAuth2User(
                 Collections.singleton(new
